@@ -54,6 +54,7 @@
 ;;  - Was I consistent?
 ;;  - Were there any strange patterns?
 ;;  - Did I improve?
+;;  - Did I have varied rides?
 ;;  - How can I have more long duration rides?
 
 ;; ## The data
@@ -294,3 +295,12 @@
   (clerk/table {:head ["Metric" "Mean weekly difference" "Median weekly difference"]
                 :rows [["Duration (hours)" mean-weekly-diff-dur median-weekly-diff-dur]
                        ["Count" mean-weekly-diff-count median-weekly-diff-count]]}))
+
+;; ### Key Findings in Consistency
+
+;; - The cycling season was **split into 3** due to an injury and a 2 week vacation
+;; - The **longest consecutive week streak** was 12, a big jump from the second 
+;;   longest: 5
+;; - Less than half of the weeks spent training had **more than 3 rides**
+;; - Riding volume varies greatly from week to week with an average 
+;;   **weekly difference of 2.9 hours or 2.2 rides**
