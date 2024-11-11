@@ -7,9 +7,3 @@
 
 ;; or let Clerk watch the given `:paths` for changes
 (clerk/serve! {:watch-paths ["notebooks" "src"]})
-
-;; start with watcher and show filter function to enable notebook pinning
-(clerk/serve! {:watch-paths ["notebooks" "src"] :show-filter-fn #(clojure.string/starts-with? % "notebooks")})
-
-
-(clerk/build! {:paths ["notebooks/hello.clj"]})
